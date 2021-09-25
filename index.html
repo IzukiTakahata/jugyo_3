@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h2>HTML, CSS, JSの復習</h2>
+        <ul>
+            <li>HTML：枠組み、コンテンツの作成（文章、画像など）</li>
+            <li>CSS：装飾（色をつけたり、形を変えたり、並び方を変えたり）</li>
+            <li>JS(JavaScript)：動きをつける</li>
+        </ul>
+        <p>
+            cssやjsファイルはHTMLに直接書くこともできるし、外部ファイルを読み込むこともできます。
+        </p>
+        <p>
+            外部ファイルを読み込む場合は基本的に相対パスで設定します。<br>
+            相対パスの反対は絶対パスです。<br>
+            相対パスはターゲットになるファイルから、絶対パスはルートディレクトリ（一番上、Cドライブなど）からのパスです。<br>
+            <a href="https://proengineer.internous.co.jp/content/columnfeature/5229">参考はこちら</a>
+        </p>
+    </div>
+
+    <div>
+        <h2>フレームワークとは</h2>
+        <p>
+            アプリケーションなどを作成する際の「枠組み」のこと。<br>
+            フレームワークの考え方に則ってプログラミングをすることで、手間を最小限にアプリケーションを作成できる。
+        </p>
+        <h3>Bootstrap</h3>
+        <p>
+            <a href="https://getbootstrap.jp/docs/4.5/getting-started/introduction/">参考</a><br>
+            CSSフレームワークの1つ。スマフォにも対応した画面を作成しやすい（レスポンシブ対応）<br>
+            グリッドシステムという、画面の横幅を12分割してコンテンツの大きさを設定していく。
+        </p>
+    </div>
+
+    <div>
+        <h2>ライブラリとは</h2>
+        <p>
+            処理をまとめたもの。<br>
+            読み込んで、必要なものを呼び出して使っていく。
+        </p>
+        <h2>jQuery</h2>
+        <a href="https://jquery.com/">参考</a><br>
+        <p>
+            昔からある有名はjsのライブラリ。<br>
+            jsでやりたいことはほとんどあるんじゃないかな？ってくらいまとまっているライブラリ。<br>
+            最近は「React」「Vue」などにおされがち。。。
+        </p>
+    </div>
+
+    <div>
+        <h2>webにおける導入方法について</h2>
+        基本的にフレームワークやライブラリを読み込むという部分は同じ。
+        <h3>ファイルをダウンロードして配置</h3>
+        <p>
+            公式サイトなどから必要なファイルをダウンロードしてきて配置する。<br>
+            常に同じバージョンを読み込む必要がある場合や、外部ネットワークに接続できない場所で作成する場合に有用。
+        </p>
+        <h3>CDN</h3>
+        <p>
+            コンテンツ・デリバリー・ネットワーク&nbspの略。<br>
+            インターネット上にあるファイルを参照して読み込む。
+        </p>
+    </div>
+</body>
+</html>
