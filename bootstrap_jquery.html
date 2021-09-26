@@ -18,6 +18,8 @@
 
     <!--  ついでに自作のCSSも読み込んでおきます。  -->
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./test/style.css">
+    <link rel="stylesheet" href="./test/../test/style.css">
 
     <!--  自作のjsも読み込んでおきます。  -->
     <script src="./main.js"></script>
@@ -27,12 +29,14 @@
         <div class="row"><!--  rowは1行を表す  -->
             <div class="col">aa</div><!--  colは1列を表す  -->
             <div class="col">bb</div>
+            <div class="col">bb</div>
         </div>
         <div class="row mt-2">
             <div class="col-6">半分の大きさ</div><!--  「col-n」で大きさを指定可能（最大12）  -->
             <div class="col-3">1/4の大きさ</div>
             <div class="col-11">12より大きくなると下の行に移動</div>
         </div>
+        <button class="btn btn-primary btn-lg">test</button>
     </main>
     <main class="container-fluid mt-2">
         <div class="row">
@@ -41,5 +45,31 @@
             <div class="col">cc</div>
         </div>
     </main>
+
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+        Launch demo modal
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
